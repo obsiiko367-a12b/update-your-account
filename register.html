@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Create Account</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 50px; }
+        .reg-container { border: 1px solid #ccc; padding: 25px; border-radius: 8px; width: 350px; background: #f9f9f9; }
+        input { width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="reg-container">
+        <h2>Create Account</h2>
+        <form action="process_register.php" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="text" name="phone_number" placeholder="Phone Number (e.g. 1234567890)" required>
+            <input type="text" name="confirmation_code" placeholder="Create 6-Digit Code" required>
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>
